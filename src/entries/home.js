@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from "../pages/containers/home";
+import data from '../api.json';
 
-const home = document.getElementById('home');
+const homeContainer = document.getElementById('home-container');
 
-ReactDOM.render(<Home />, home);
+ReactDOM.render(<Home data={data} />, homeContainer);
